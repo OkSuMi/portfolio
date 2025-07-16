@@ -228,6 +228,7 @@
 	var executed4 = false;
 	var executed5 = false;
 	var executed6 = false;
+	var executed7 = false;
 
 	$('.features').waypoint(function () {
 		var targetNumber = $('.animate1').attr('data-rate');
@@ -289,6 +290,16 @@
 			}, 1500);
 			executed6 = true;
 		}
+		var targetNumber = $('.animate7').attr('data-rate');
+		if (!executed7) {
+			var percent_number_step = $.animateNumber.numberStepFactories.append('%')
+			$('.animate7').animateNumber({
+				number: targetNumber,
+				numberStep: percent_number_step
+			}, 1500);
+			executed7 = true;
+		}
+		
 	},
 		{
 			offset: '80%'
