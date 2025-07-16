@@ -517,6 +517,18 @@ h6 {
 	}
 }
 
+@media screen and (max-width: 800px) {
+	.about>.cb {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	ul.contact>li {
+		flex-direction: column;
+	}
+}
+
 /* portfolio */
 #two {
 	border-bottom: #333333 solid 1px;
@@ -585,9 +597,9 @@ h6 {
 }
 
 @media screen and (max-width:800px) {
-	/* .portfolio{
-		display: flex;
-	} */
+	.portfolio {
+		margin-bottom: 0px;
+	}
 
 	.button_box {
 		display: flex;
@@ -596,8 +608,17 @@ h6 {
 		padding-bottom: 70px;
 	}
 
+	.button {
+		font-size: 12px;
+	}
+
 	.Promotion {
 		padding: 0;
+		font-size: 30px;
+	}
+
+	.pf {
+		font-size: 18px;
 	}
 
 }
@@ -646,13 +667,13 @@ h6 {
 
 
 	.art {
-		/* flex-wrap: wrap; */
-		/* gap: 2em 0; */
+		flex-wrap: wrap;
+		gap: 2em 0;
 		display: flex;
 	}
 
 	.art section {
-		flex: 1 1 50%;
+		flex: 1 1 100%;
 	}
 
 	.art_text {
@@ -788,10 +809,10 @@ h6 {
 		width: 50%;
 	}
 
-	/* .features section:nth-child(1),
+	.features section:nth-child(1),
 	.features section:nth-child(2) {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-	} */
+	}
 
 }
 
@@ -805,11 +826,10 @@ h6 {
 		width: 100%;
 		padding: 4.2em 1.5em 1.5em;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-		border-left: 0;
 	}
 
 	.features section:last-child {
-		border-bottom: 0;
+		border-bottom: 1px solid #b1e5f3;
 	}
 
 }
@@ -1741,6 +1761,14 @@ body.is-preload #sidebar nav ul li {
 	justify-content: space-between;
 }
 
+@media screen and (max-width: 1280px) {
+
+	#intro {
+		background-attachment: scroll;
+	}
+
+}
+
 @media screen and (max-width: 800px) {
 
 	#intro {
@@ -1767,15 +1795,21 @@ body.is-preload #sidebar nav ul li {
 
 }
 
-
-
-@media screen and (max-width: 1280px) {
-
-	#intro {
-		background-attachment: scroll;
+@media screen and (max-width: 425px) {
+	#intro h1 {
+		font-size: 75px;
 	}
 
+	#intro p {
+		font-size: 18px;
+	}
+
+	#intro .design {
+		font-size: 14px;
+	}
 }
+
+
 
 /* Popup */
 
