@@ -330,7 +330,7 @@ h1.major:after {
 }
 
 h2 {
-	font-size: 1.75em;
+	font-size: 2em;
 }
 
 h3 {
@@ -353,10 +353,6 @@ h6 {
 
 	h1 {
 		font-size: 2em;
-	}
-
-	h2 {
-		font-size: 1.25em;
 	}
 
 	h3 {
@@ -589,6 +585,7 @@ h6 {
 
 	.portfolio_text {
 		width: 100%;
+		padding: 0px 10px 40px 10px;
 	}
 
 	.portfolio_text .logo {
